@@ -1,0 +1,61 @@
+[
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "crossFile.o",
+            "crossFile.c"
+        ],
+        "directory": "/home/xc5/GeneralCdemo/CrossFile",
+        "file": "crossFile.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "assign_npd.o",
+            "assign_npd.c"
+        ],
+        "directory": "/home/xc5/GeneralCdemo/CrossFile",
+        "file": "assign_npd.c"
+    },
+    {
+        "arguments": [
+            "/usr/bin/ld",
+            "--build-id",
+            "--no-add-needed",
+            "--eh-frame-hdr",
+            "--hash-style=gnu",
+            "-m",
+            "elf_x86_64",
+            "-dynamic-linker",
+            "/lib64/ld-linux-x86-64.so.2",
+            "-o",
+            "program",
+            "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o",
+            "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o",
+            "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o",
+            "-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5",
+            "-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64",
+            "-L/lib/../lib64",
+            "-L/usr/lib/../lib64",
+            "-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..",
+            "assign_npd.o",
+            "crossFile.o",
+            "-lgcc",
+            "--as-needed",
+            "-lgcc_s",
+            "--no-as-needed",
+            "-lc",
+            "-lgcc",
+            "--as-needed",
+            "-lgcc_s",
+            "--no-as-needed",
+            "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o",
+            "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o"
+        ],
+        "directory": "/home/xc5/GeneralCdemo/CrossFile"
+    }
+]
