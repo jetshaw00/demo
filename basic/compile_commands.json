@@ -1,0 +1,82 @@
+[
+    {
+        "file": "aob.c",
+        "directory": "/home/johanna/c_testcase/basic",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "aob.o",
+            "aob.c"
+        ]
+    },
+    {
+        "file": "msf.c",
+        "directory": "/home/johanna/c_testcase/basic",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "msf.o",
+            "msf.c"
+        ]
+    },
+    {
+        "file": "uiv.c",
+        "directory": "/home/johanna/c_testcase/basic",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "uiv.o",
+            "uiv.c"
+        ]
+    },
+    {
+        "file": "dbf.c",
+        "directory": "/home/johanna/c_testcase/basic",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "dbf.o",
+            "dbf.c"
+        ]
+    },
+    {
+        "file": "uaf.c",
+        "directory": "/home/johanna/c_testcase/basic",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "uaf.o",
+            "uaf.c"
+        ]
+    },
+    {
+        "file": "npd.c",
+        "directory": "/home/johanna/c_testcase/basic",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "npd.o",
+            "npd.c"
+        ]
+    },
+    {
+        "directory": "/home/johanna/c_testcase/basic",
+        "arguments": [
+            "ar",
+            "crv",
+            "basic.a",
+            "uiv.o",
+            "npd.o",
+            "aob.o",
+            "msf.o",
+            "dbf.o",
+            "uaf.o"
+        ]
+    }
+]
