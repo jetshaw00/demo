@@ -1,0 +1,208 @@
+[
+    {
+        "file": "xplatform_32_64.c",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "xplatform_32_64.o",
+            "xplatform_32_64.c"
+        ],
+        "directory": "/home/johanna/GeneralCdemo/advance"
+    },
+    {
+        "file": "global.c",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "global.o",
+            "global.c"
+        ],
+        "directory": "/home/johanna/GeneralCdemo/advance"
+    },
+    {
+        "file": "npd.c",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "npd.o",
+            "npd.c"
+        ],
+        "directory": "/home/johanna/GeneralCdemo/advance"
+    },
+    {
+        "file": "asm_uiv_npd.c",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "asm_uiv_npd.o",
+            "asm_uiv_npd.c"
+        ],
+        "directory": "/home/johanna/GeneralCdemo/advance"
+    },
+    {
+        "file": "msf.c",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "msf.o",
+            "msf.c"
+        ],
+        "directory": "/home/johanna/GeneralCdemo/advance"
+    },
+    {
+        "file": "dbf.c",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "dbf.o",
+            "dbf.c"
+        ],
+        "directory": "/home/johanna/GeneralCdemo/advance"
+    },
+    {
+        "file": "wp_eg_obj_sensitive.c",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "wp_eg_obj_sensitive.o",
+            "wp_eg_obj_sensitive.c"
+        ],
+        "directory": "/home/johanna/GeneralCdemo/advance"
+    },
+    {
+        "file": "main.c",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "main.o",
+            "main.c"
+        ],
+        "directory": "/home/johanna/GeneralCdemo/advance"
+    },
+    {
+        "file": "uaf.c",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "uaf.o",
+            "uaf.c"
+        ],
+        "directory": "/home/johanna/GeneralCdemo/advance"
+    },
+    {
+        "file": "aob.c",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "aob.o",
+            "aob.c"
+        ],
+        "directory": "/home/johanna/GeneralCdemo/advance"
+    },
+    {
+        "file": "wp_eg_npd.c",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "wp_eg_npd.o",
+            "wp_eg_npd.c"
+        ],
+        "directory": "/home/johanna/GeneralCdemo/advance"
+    },
+    {
+        "file": "wp_eg_npd_ctx.c",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "wp_eg_npd_ctx.o",
+            "wp_eg_npd_ctx.c"
+        ],
+        "directory": "/home/johanna/GeneralCdemo/advance"
+    },
+    {
+        "file": "uiv.c",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "uiv.o",
+            "uiv.c"
+        ],
+        "directory": "/home/johanna/GeneralCdemo/advance"
+    },
+    {
+        "arguments": [
+            "/usr/bin/ld",
+            "-plugin",
+            "/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so",
+            "-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper",
+            "-plugin-opt=-fresolution=/tmp/ccHidyEc.res",
+            "-plugin-opt=-pass-through=-lgcc",
+            "-plugin-opt=-pass-through=-lgcc_s",
+            "-plugin-opt=-pass-through=-lc",
+            "-plugin-opt=-pass-through=-lgcc",
+            "-plugin-opt=-pass-through=-lgcc_s",
+            "--sysroot=/",
+            "--build-id",
+            "--eh-frame-hdr",
+            "-m",
+            "elf_x86_64",
+            "--hash-style=gnu",
+            "--as-needed",
+            "-dynamic-linker",
+            "/lib64/ld-linux-x86-64.so.2",
+            "-z",
+            "relro",
+            "-o",
+            "program",
+            "/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o",
+            "/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o",
+            "/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o",
+            "-L/usr/lib/gcc/x86_64-linux-gnu/5",
+            "-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu",
+            "-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib",
+            "-L/lib/x86_64-linux-gnu",
+            "-L/lib/../lib",
+            "-L/usr/lib/x86_64-linux-gnu",
+            "-L/usr/lib/../lib",
+            "-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..",
+            "uiv.o",
+            "npd.o",
+            "aob.o",
+            "msf.o",
+            "dbf.o",
+            "uaf.o",
+            "main.o",
+            "global.o",
+            "asm_uiv_npd.o",
+            "wp_eg_npd_ctx.o",
+            "wp_eg_npd.o",
+            "wp_eg_obj_sensitive.o",
+            "xplatform_32_64.o",
+            "-lgcc",
+            "--as-needed",
+            "-lgcc_s",
+            "--no-as-needed",
+            "-lc",
+            "-lgcc",
+            "--as-needed",
+            "-lgcc_s",
+            "--no-as-needed",
+            "/usr/lib/gcc/x86_64-linux-gnu/5/crtend.o",
+            "/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o"
+        ],
+        "directory": "/home/johanna/GeneralCdemo/advance"
+    }
+]
